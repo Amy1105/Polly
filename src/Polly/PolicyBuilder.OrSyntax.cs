@@ -6,6 +6,7 @@ public partial class PolicyBuilder
 
     /// <summary>
     /// Specifies the type of exception that this policy can handle.
+    /// 指定此策略可以处理的异常类型.
     /// </summary>
     /// <typeparam name="TException">The type of the exception to handle.</typeparam>
     /// <returns>The PolicyBuilder instance.</returns>
@@ -18,6 +19,7 @@ public partial class PolicyBuilder
 
     /// <summary>
     /// Specifies the type of exception that this policy can handle with additional filters on this exception type.
+    /// 指定此策略可以使用此异常类型的其他筛选器处理的异常类型.
     /// </summary>
     /// <typeparam name="TException">The type of the exception.</typeparam>
     /// <param name="exceptionPredicate">The exception predicate to filter the type of exception this policy can handle.</param>

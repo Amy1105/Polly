@@ -3,6 +3,7 @@
 /// <inheritdoc />
 /// <summary>
 /// Stores a registry of <see cref="string" /> and policy pairs.
+/// 存储<see-cref="string"/>和策略对的注册表.
 /// </summary>
 /// <remarks>Uses ConcurrentDictionary to store the collection.</remarks>
 public class PolicyRegistry : IConcurrentPolicyRegistry<string>

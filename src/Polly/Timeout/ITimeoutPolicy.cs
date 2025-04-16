@@ -2,6 +2,7 @@
 
 /// <summary>
 /// Defines properties and methods common to all Timeout policies.
+/// 定义所有Timeout策略共有的属性和方法.
 /// </summary>
 public interface ITimeoutPolicy : IsPolicy
 {

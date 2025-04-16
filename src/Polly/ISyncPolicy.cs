@@ -2,6 +2,7 @@
 
 /// <summary>
 /// An interface defining all executions available on a non-generic, synchronous policy.
+/// 定义非通用同步策略上所有可用执行的接口。
 /// </summary>
 public interface ISyncPolicy : IsPolicy
 {
@@ -15,15 +16,16 @@ public interface ISyncPolicy : IsPolicy
 
     /// <summary>
     /// Executes the specified action within the policy.
+    /// 执行策略中指定的操作.
     /// </summary>
-    /// <param name="action">The action to perform.</param>
+    /// <param name="action">The action to perform. 要执行的操作.</param>
     void Execute(Action action);
 
     /// <summary>
     /// Executes the specified action within the policy.
     /// </summary>
     /// <param name="action">The action to perform.</param>
-    /// <param name="contextData">Arbitrary data that is passed to the exception policy.</param>
+    /// <param name="contextData">Arbitrary data that is passed to the exception policy.传递给异常策略的任意数据.</param>
     void Execute(Action<Context> action, IDictionary<string, object> contextData);
 
     /// <summary>
@@ -159,6 +161,7 @@ public interface ISyncPolicy : IsPolicy
 
     /// <summary>
     /// Executes the specified action within the policy and returns the captured result.
+    /// 执行策略中的指定操作并返回捕获的结果.
     /// </summary>
     /// <param name="action">The action to perform.</param>
     /// <param name="context">Context data that is passed to the exception policy.</param>

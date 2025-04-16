@@ -3,6 +3,7 @@ namespace Polly.Fallback;
 
 /// <summary>
 /// A fallback policy that can be applied to asynchronous delegates.
+/// 可应用于异步委托的回退策略.
 /// </summary>
 public class AsyncFallbackPolicy : AsyncPolicy, IFallbackPolicy
 {

@@ -3,6 +3,7 @@ namespace Polly.Fallback;
 
 /// <summary>
 /// Defines properties and methods common to all Fallback policies.
+/// 定义所有回退策略共有的属性和方法.
 /// </summary>
 public interface IFallbackPolicy : IsPolicy
 {

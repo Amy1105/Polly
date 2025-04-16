@@ -4,6 +4,7 @@ namespace Polly;
 
 /// <summary>
 /// Builder class that holds the list of current exception predicates.
+/// 保存当前异常谓词列表的生成器类.
 /// </summary>
 public sealed partial class PolicyBuilder
 {
@@ -15,6 +16,7 @@ public sealed partial class PolicyBuilder
 
     /// <summary>
     /// Gets the predicates specifying exceptions that the policy is being configured to handle.
+    /// 获取指定策略配置为处理的异常的谓词.
     /// </summary>
     internal ExceptionPredicates ExceptionPredicates { get; }
 

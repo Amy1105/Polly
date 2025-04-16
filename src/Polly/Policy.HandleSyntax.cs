@@ -4,9 +4,10 @@ public partial class Policy
 {
     /// <summary>
     /// Specifies the type of exception that this policy can handle.
+    /// 指定此策略可以处理的异常类型.
     /// </summary>
-    /// <typeparam name="TException">The type of the exception to handle.</typeparam>
-    /// <returns>The PolicyBuilder instance, for fluent chaining.</returns>
+    /// <typeparam name="TException">The type of the exception to handle.要处理的异常类型.</typeparam>
+    /// <returns>The PolicyBuilder instance, for fluent chaining.PolicyBuilder实例，用于流畅链接.</returns>
     public static PolicyBuilder Handle<TException>()
         where TException : Exception
         =>
@@ -14,9 +15,11 @@ public partial class Policy
 
     /// <summary>
     /// Specifies the type of exception that this policy can handle with additional filters on this exception type.
+    /// 指定此策略可以使用此异常类型的其他筛选器处理的异常类型.
     /// </summary>
     /// <typeparam name="TException">The type of the exception.</typeparam>
-    /// <param name="exceptionPredicate">The exception predicate to filter the type of exception this policy can handle.</param>
+    /// <param name="exceptionPredicate">The exception predicate to filter the type of exception this policy can handle.
+    /// 用于筛选此策略可以处理的异常类型的异常谓词.</param>
     /// <returns>The PolicyBuilder instance, for fluent chaining.</returns>
     public static PolicyBuilder Handle<TException>(Func<TException, bool> exceptionPredicate)
         where TException : Exception
@@ -25,6 +28,7 @@ public partial class Policy
 
     /// <summary>
     /// Specifies the type of exception that this policy can handle if found as an InnerException of a regular <see cref="Exception"/>, or at any level of nesting within an <see cref="AggregateException"/>.
+    /// 指定此策略可以处理的异常类型，如果发现为常规<see cref="exception"/>的InnerException，或在<see cref="AggregateException"/>>内的任何嵌套级别.
     /// </summary>
     /// <typeparam name="TException">The type of the exception to handle.</typeparam>
     /// <returns>The PolicyBuilder instance, for fluent chaining.</returns>
@@ -35,6 +39,7 @@ public partial class Policy
 
     /// <summary>
     /// Specifies the type of exception that this policy can handle, with additional filters on this exception type, if found as an InnerException of a regular <see cref="Exception"/>, or at any level of nesting within an <see cref="AggregateException"/>.
+    /// 指定此策略可以处理的异常类型，如果发现此异常类型为常规<see cref="exception"/>的InnerException，或在<see credf="AggregateException"/>>内的任何嵌套级别，则对此异常类型使用其他筛选器.
     /// </summary>
     /// <typeparam name="TException">The type of the exception to handle.</typeparam>
     /// <param name="exceptionPredicate">The exception predicate to filter the type of exception this policy can handle.</param>

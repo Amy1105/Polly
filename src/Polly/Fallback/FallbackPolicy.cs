@@ -3,6 +3,7 @@ namespace Polly.Fallback;
 
 /// <summary>
 /// A fallback policy that can be applied to delegates.
+/// 可应用于代理的回退策略.
 /// </summary>
 public class FallbackPolicy : Policy, IFallbackPolicy
 {

@@ -2,6 +2,7 @@
 
 /// <summary>
 /// Defines properties and methods common to all PolicyWrap policies.
+/// 定义所有PolicyWrap策略共有的属性和方法.
 /// </summary>
 public interface IPolicyWrap : IsPolicy
 {

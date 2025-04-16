@@ -3,6 +3,7 @@ namespace Polly.RateLimit;
 
 /// <summary>
 /// Defines properties and methods common to all RateLimit policies.
+/// 定义所有RateLimit策略共有的属性和方法.
 /// </summary>
 public interface IRateLimitPolicy : IsPolicy
 {

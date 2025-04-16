@@ -3,6 +3,7 @@ namespace Polly.Bulkhead;
 
 /// <summary>
 /// A bulkhead-isolation policy which can be applied to delegates.
+/// 适用于代表的舱壁隔离政策.
 /// </summary>
 #pragma warning disable CA1063
 public class AsyncBulkheadPolicy : AsyncPolicy, IBulkheadPolicy

@@ -2,6 +2,7 @@
 
 /// <summary>
 /// A policy that allows two (and by recursion more) Polly policies to wrap executions of delegates.
+/// 一种允许两个（并通过递归更多）Polly策略包装委托执行的策略.
 /// </summary>
 public partial class PolicyWrap : Policy, IPolicyWrap
 {

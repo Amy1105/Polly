@@ -2,6 +2,7 @@
 
 /// <summary>
 /// Represents a collection of policies keyed by <typeparamref name="TKey"/>.
+/// 表示按<typeparamref name="TKey"/>键控的策略集合.
 /// </summary>
 /// <typeparam name="TKey">The type of keys in the policy registry.</typeparam>
 public interface IPolicyRegistry<TKey> : IReadOnlyPolicyRegistry<TKey>

@@ -2,6 +2,7 @@
 
 /// <summary>
 /// A collection of predicates used to define whether a policy handles a given <see cref="Exception"/>.
+/// 一组谓词，用于定义策略是否处理给定的<see cref="Exception"/>.
 /// </summary>
 public class ExceptionPredicates
 {

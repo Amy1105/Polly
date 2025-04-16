@@ -3,6 +3,7 @@ namespace Polly;
 
 /// <summary>
 /// Fluent API for defining a Fallback policy.
+/// 用于定义回退策略的Fluent API.
 /// </summary>
 public static class FallbackSyntax
 {

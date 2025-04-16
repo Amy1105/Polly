@@ -13,6 +13,7 @@ public abstract partial class PolicyBase
 
     /// <summary>
     /// Gets a key intended to be unique to each <see cref="IsPolicy"/> instance, which is passed with executions as the <see cref="Context.PolicyKey"/> property.
+    ///获取每个<see-cref="IsPolicy"/>实例的唯一键，该键与执行一起作为<see-cref="Context.PolicyKey"/>属性传递.
     /// </summary>
     public string PolicyKey => policyKeyInternal ??= GetType().Name + "-" + KeyHelper.GuidPart();
 
@@ -20,6 +21,7 @@ public abstract partial class PolicyBase
 
     /// <summary>
     /// Restores the supplied keys to the execution <see cref="Context"/>.
+    /// 将提供的密钥还原到执行<see cref="Context"/>.
     /// </summary>
     /// <param name="executionContext">The execution <see cref="Context"/>.</param>
     /// <param name="priorPolicyWrapKey">The <see cref="Context.PolicyWrapKey"/> prior to execution through this policy.</param>

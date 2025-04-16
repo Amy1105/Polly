@@ -6,6 +6,7 @@ public abstract partial class Policy : ISyncPolicy
 
     /// <summary>
     /// Executes the specified action within the policy.
+    /// 执行策略中指定的操作.
     /// </summary>
     /// <param name="action">The action to perform.</param>
     [DebuggerStepThrough]
@@ -14,6 +15,7 @@ public abstract partial class Policy : ISyncPolicy
 
     /// <summary>
     /// Executes the specified action within the policy.
+    /// 执行策略中指定的操作.
     /// </summary>
     /// <param name="action">The action to perform.</param>
     /// <param name="contextData">Arbitrary data that is passed to the exception policy.</param>
@@ -23,6 +25,7 @@ public abstract partial class Policy : ISyncPolicy
 
     /// <summary>
     /// Executes the specified action within the policy.
+    /// 执行策略中指定的操作.
     /// </summary>
     /// <param name="action">The action to perform.</param>
     /// <param name="context">Context data that is passed to the exception policy.</param>
