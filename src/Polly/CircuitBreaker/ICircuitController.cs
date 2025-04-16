@@ -2,6 +2,7 @@
 
 /// <summary>
 /// Interface for controlling a circuit breaker.
+/// 用于控制断路器的接口.
 /// </summary>
 /// <typeparam name="TResult">The type of the result.</typeparam>
 internal interface ICircuitController<TResult>

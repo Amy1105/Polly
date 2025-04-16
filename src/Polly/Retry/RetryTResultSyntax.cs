@@ -2,6 +2,7 @@
 
 /// <summary>
 /// Fluent API for defining a Retry <see cref="Policy{TResult}"/>.
+/// Fluent API定义重试<see cref="Policy{TResult}"/>.
 /// </summary>
 public static class RetryTResultSyntax
 {

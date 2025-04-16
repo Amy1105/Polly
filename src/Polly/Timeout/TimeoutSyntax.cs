@@ -4,9 +4,10 @@ public partial class Policy
 {
     /// <summary>
     /// Builds a <see cref="Policy"/> that will wait for a delegate to complete for a specified period of time. A <see cref="TimeoutRejectedException"/> will be thrown if the delegate does not complete within the configured timeout.
+    /// 构建一个<see cref="Policy"/>，在指定的时间段内等待代理完成。如果委托未在配置的超时内完成，将抛出<see cref="TimeoutRejectedException"/>.
     /// </summary>
-    /// <param name="seconds">The number of seconds after which to timeout.</param>
-    /// <exception cref="ArgumentOutOfRangeException">seconds;Value must be greater than zero.</exception>
+    /// <param name="seconds">The number of seconds after which to timeout.超时的秒数.</param>
+    /// <exception cref="ArgumentOutOfRangeException">seconds;Value must be greater than zero.秒；值必须大于零.</exception>
     /// <returns>The policy instance.</returns>
     public static TimeoutPolicy Timeout(int seconds)
     {

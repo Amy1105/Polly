@@ -3,6 +3,7 @@ namespace Polly.RateLimit;
 
 /// <summary>
 /// A lock-free token-bucket rate-limiter for a Polly <see cref="IRateLimitPolicy"/>.
+/// Polly的无锁令牌桶速率限制器<see cref="IRateLimitPolicy"/>.
 /// </summary>
 internal sealed class LockFreeTokenBucketRateLimiter : IRateLimiter
 {

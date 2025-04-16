@@ -7,6 +7,7 @@ public static class RetrySyntax
 {
     /// <summary>
     /// Builds a <see cref="Policy"/> that will retry once.
+    /// 构建一个将重试一次的<see-cref="Policy"/>.
     /// </summary>
     /// <param name="policyBuilder">The policy builder.</param>
     /// <returns>The policy instance.</returns>

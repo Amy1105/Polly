@@ -2,6 +2,7 @@
 
 /// <summary>
 ///     Fluent API for defining an <see cref="AsyncRetryPolicy{TResult}" />.
+///     Fluent API用于定义<see cref="AsyncRetryPolicy{TResult}"/>.
 /// </summary>
 public static class AsyncRetryTResultSyntax
 {
