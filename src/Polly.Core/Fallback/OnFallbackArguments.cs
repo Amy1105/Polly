@@ -4,6 +4,7 @@ namespace Polly.Fallback;
 
 /// <summary>
 /// Represents arguments used in fallback handling scenarios.
+/// 表示回退处理方案中使用的参数.
 /// </summary>
 /// <typeparam name="TResult">The type of result.</typeparam>
 /// <remarks>

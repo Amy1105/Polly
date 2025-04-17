@@ -6,6 +6,7 @@ namespace Polly;
 
 /// <summary>
 /// Extensions for adding fallback to <see cref="ResiliencePipelineBuilder"/>.
+/// 为<see cref="ResiliencePipeBuilder"/>添加回退的扩展.
 /// </summary>
 public static class FallbackResiliencePipelineBuilderExtensions
 {

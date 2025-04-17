@@ -4,9 +4,11 @@ namespace Polly.Timeout;
 
 /// <summary>
 /// Arguments used by the timeout strategy to notify that a timeout occurred.
+/// 超时策略用于通知发生超时的参数.
 /// </summary>
 /// <remarks>
 /// Always use the constructor when creating this struct, otherwise we do not guarantee binary compatibility.
+/// 创建此结构时始终使用构造函数，否则我们不保证二进制兼容性.
 /// </remarks>
 public readonly struct OnTimeoutArguments
 {
